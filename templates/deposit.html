@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit
+{% endblock %}
+
+{% block main %}
+    {% block price %}{% endblock %}
+    <form action="/deposit" method="post">
+            <input class="form-control" name="money" placeholder="Money to deposit" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Deposit</button>
+    </form>
+{% endblock %}
